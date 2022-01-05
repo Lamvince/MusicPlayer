@@ -49,10 +49,10 @@ cmake_ninja_workdir = C$:/Users/Min/CLionProjects/MusicPlayer/cmake-build-debug/
 
 build cmake_object_order_depends_target_MusicPlayer: phony || CMakeFiles/MusicPlayer.dir
 
-build CMakeFiles/MusicPlayer.dir/main.cpp.obj: CXX_COMPILER__MusicPlayer_Debug C$:/Users/Min/CLionProjects/MusicPlayer/main.cpp || cmake_object_order_depends_target_MusicPlayer
-  DEP_FILE = CMakeFiles\MusicPlayer.dir\main.cpp.obj.d
+build CMakeFiles/MusicPlayer.dir/MusicPlayer.cpp.obj: CXX_COMPILER__MusicPlayer_Debug C$:/Users/Min/CLionProjects/MusicPlayer/MusicPlayer.cpp || cmake_object_order_depends_target_MusicPlayer
+  DEP_FILE = CMakeFiles\MusicPlayer.dir\MusicPlayer.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -I/dshow.h -I/strmiids.lib
+  INCLUDES = -IC:/Users/Min/CLionProjects/MusicPlayer/dshow.h
   OBJECT_DIR = CMakeFiles\MusicPlayer.dir
   OBJECT_FILE_DIR = CMakeFiles\MusicPlayer.dir
 
@@ -64,7 +64,7 @@ build CMakeFiles/MusicPlayer.dir/main.cpp.obj: CXX_COMPILER__MusicPlayer_Debug C
 #############################################
 # Link the executable MusicPlayer.exe
 
-build MusicPlayer.exe: CXX_EXECUTABLE_LINKER__MusicPlayer_Debug CMakeFiles/MusicPlayer.dir/main.cpp.obj | ../strmiids.lib
+build MusicPlayer.exe: CXX_EXECUTABLE_LINKER__MusicPlayer_Debug CMakeFiles/MusicPlayer.dir/MusicPlayer.cpp.obj | ../strmiids.lib
   FLAGS = -g
   LINK_LIBRARIES = ../strmiids.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\MusicPlayer.dir
